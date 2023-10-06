@@ -10,6 +10,6 @@
 - Os desafios serão upados em suas respectivas pastas na tentativa de reduzir a desorganização e manter este repositório como um manual para consultas quando necessárias.
 - listando desafios por pastas e diretórios.
 
-#_Objetivo:_
+# _Objetivo:_
 
 - Aproveitar a oportunidade para aprender mais sobre Desenvolvimento web, usando JavaScript, html e css
