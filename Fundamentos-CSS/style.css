@@ -1,0 +1,123 @@
+* {
+  font-weight: bold;
+  font-family: cursive;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0%;
+}
+
+h1 {
+  background-color: rgb(201, 20, 20);
+}
+
+h2 {
+  text-align: center;
+  box-sizing: content-box;
+}
+.main {
+  /*Usando o seletor de class*/
+  background-color: rgb(113, 117, 120);
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 3px;
+}
+
+#menu {
+  /* Usando seletor de ID */
+  text-align: center;
+  margin-bottom: 3px;
+}
+.botaomenu {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  padding-left: 1px;
+  border: 1px solid rgba(192, 192, 192, 0.507);
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(192, 192, 192, 0.253);
+}
+.botaomenu:hover {
+  background-color: rgb(201, 20, 20);
+  cursor: pointer;
+  width: 50px;
+  text-align: justify;
+  color: aliceblue;
+}
+
+a {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  padding: 8px;
+  display: inline-flex;
+  text-decoration: none;
+  background-color: gray;
+  border-radius: 8px;
+  color: black;
+}
+#menu a:hover {
+  /* Usando seletor de ID */
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px;
+  text-decoration: underline;
+  background-color: rgb(15, 59, 169);
+  color: aliceblue;
+}
+.explanation {
+  color: azure;
+  text-align: center;
+  border: 2px;
+  border-style: groove;
+  margin: 20px;
+  padding: 3px;
+}
+.example {
+  color: rgb(18, 27, 58);
+  background-color: lightblue;
+  border-radius: 10px;
+  margin: 30px;
+  text-align: justify;
+  padding-right: 2%;
+}
+
+ul div ul li {
+  color: chocolate;
+}
+div > p {
+  background-color: lightblue;
+  color: rgb(18, 27, 58);
+  background-color: lightblue;
+  border-radius: 10px;
+  margin: 30px;
+  text-align: center;
+}
+
+div + p {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: aliceblue;
+}
+span ~ p {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: tomato;
+}
+
+li > span {
+  font-weight: 400;
+}

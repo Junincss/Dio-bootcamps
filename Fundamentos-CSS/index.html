@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dio | Fundamentos Css</title>
+  </head>
+  <body>
+    <header>
+      <h1>Módulo de fundamentos CSS | Dio Potência tech IFood</h1>
+      <nav id="menu" class="menu">
+        <a href="#introduction">Introdução ao CSS</a>
+        <a href="#selectors">Seletores</a>
+        <a href="#combiners">Combinadores</a>
+        <a href="#sizing-and-spacing-properties">Propriedades de dimensionamento e Espaçamento</a>
+      </nav>
+    </header>
+    <a class="botaomenu" href="#menu">Menu</a>
+    <main class="main">
+      <article class="introduction" id="introduction">
+        <h2>Oque é CSS?</h2>
+        <p>
+          CSS não é uma linguagem de programação, mas é considerado um código de
+          estilização para páginas web, Cascating style sheets. com css podemos
+          fazer alterações de bloco de maneira rápida e "fácil", trazendo mais
+          atratividades e composição ao layout das páginas web, através de css
+          podemos acrescentar interatividade ao usuário, dinamicidade nas cores
+          e estrutura das páginas e muito mais.
+        </p>
+        <h2>O que pode ser criado com CSS?</h2>
+        <p>
+          Muitas coisas podem ser criadas com css, sites estilizados usam css
+          para adotar estratégias de marketing e muito mais, não somente sites
+          simples, mas CSS está muito presente em aplicações web trazendo estilo
+          e organização a elas.
+        </p>
+        <h2>Formas de Declaração do CSS</h2>
+        <p>
+          CSS pode ser declarado de diferentes formas, ele pode ser declarado no
+          corpo de uma tag em uma pagina html pode ser declarado como uma tag
+          principal no head de uma página html, <br /><br />
+          Mas a maneira mais recomendada de se utilizar css é criando um arquivo
+          CSS e atribuindo ele no Head da sua página html. Dessa forma, podemos
+          atribuir o mesmo estilo de página a mais de uma página web, utilizando
+          o mesmo arquivo, o que aumenta a produtividade e reduzindo o trabalho
+          repetitivo.
+        </p>
+        <h2>Depurando CSS</h2>
+        <p>
+          Uma boa maneira de depurar css é utilizar o Dev-tools disponibilizado
+          por alguns navegadores, essa ferramenta nos auxilia na depuração de
+          código, pois ela é capaz de mostrar o que está declarado em html, css
+          e também em JavaScript.
+        </p>
+      </article>
+      <article class="selectors" id="selectors">
+        <h2 for="menu">Seletores CSS</h2>
+        <p>
+          Seletores são ferramentas utilizadas pelo css para selecionar
+          elementos/tags especificas do arquivo html e assim aplicarmos CSS
+          nelas. <br />
+          <br />
+          Por isso em css temos vários <strong>Seletores</strong> e algum deles
+          estão abaixo:
+        </p>
+        <ul>
+          <li class="example">
+            <strong>Seletor por TIPO:</strong>Busca elementos por uma tag HTML
+            específica.
+          </li>
+          <li class="example">
+            <strong>Seletor por ID(#):</strong>Busca elementos através do
+            atributo "id"
+          </li>
+          <li class="example">
+            <strong>Seletor por CLASSE(.):</strong>Busca elementos através do
+            atributo "class"
+          </li>
+          <li class="example">
+            <strong>Seletor Universal(*) :</strong>Seleciona todos os elementos
+            do html
+          </li>
+          <li class="example">
+            <strong>Seletor de Atributo ([atributo]):</strong>Seleciona
+            elementos que possuem um atributo específico em nosso documento HTML
+            e conseguimos também buscar atributos com um valor específico.
+          </li>
+        </ul>
+      </article>
+      <article class="combiners" id="combiners">
+        <h2>Agrupamento de Seletores CSS</h2>
+        <p>
+          Podemos aplicar as mesmas regras CSS oara vários seletores diferentes.
+          Para isso, podemos separar os seletores utilizando uma vírgula (,)
+          para utilizar o mesmo código de estilo para vários selerores faremos
+          da seguinte forma: <br /><br />
+        </p>
+        <p class="example">
+          exemplo: h1, p, div { backgroud-color: lightblue;}
+        </p>
+        <p>
+          Dessa forma, todos os items mencionados, receberão o estilo passados
+          dentro dos {}
+        </p>
+        <h2>Combinador descendente (espaço)</h2>
+        <p>
+          Combinador descendente, é uma maneira de aplicar css a elementos que
+          são descentedes de outros, um exemplo de elemento descentede são as
+          listas ordenadas/não ordenadas. muito chamados de seletores filhos
+          exemplo:
+        </p>
+        <p class="explanation">
+          Combinadores: qual o tipo de relação entre 2 seletores.
+          <br />1. Combinador descendente (espaço) <br />2. Combinador filho(>)
+          <br />3. Combinador irmão adjacente (+) <br />4. Combinador irmão em
+          geral (~) <br /><br />
+          [SELETOR] [COMBINADOR] [SELETOR]
+        </p>
+        <ul class="example">
+          <li class="fundo-zul" id="lista-01">Item 1</li>
+          <div>
+            <ul>
+              <li>Subitem A</li>
+              <li>Subitem B</li>
+            </ul>
+          </div>
+          <li class="fundo-zul" id="lista-02">Item 2</li>
+          <div>
+            <ul>
+              <li>Subitem A</li>
+              <li>Subitem B</li>
+            </ul>
+          </div>
+          <li class="fundo-zul" id="lista-03">Item 3</li>
+          <div>
+            <ul>
+              <li>Subitem A</li>
+              <li>Subitem B</li>
+            </ul>
+          </div>
+        </ul>
+        <h2>Combinador filho (>)</h2>
+        <p>
+          O combinador filho é caracterizado pelo operador maior (>), isso
+          indica que as tag são filhos de uma tagPai por exemplo.
+          <br />
+          <div>
+            <p>Linha 97 a 101 do meu css</p>
+          </div>
+        </p>
+        <h2>Combinador irmao (+)</h2>
+        <p>
+          O combinador irmão é caracterizado pelo operador mais (+), isso
+          indica que a tag selecionada será a tag que vem logo após a tag de referencia por exemplo.
+          <br />
+        </p>
+        <div class="brorher">
+          <p>linha 104 a 110 do meu css</p>
+        </div>
+        <p>paragrafo irmão</p>
+        <span> </span>
+        <p>paragrafo adjacente</p>
+      </article>
+      <article class="sizing-and-spacing-properties">
+        <h2>Propriedades de Dimensionamento e Espaçamento.</h2>
+        <ul class="example">
+          <li>Width: <span class="content">Largura</span></li>
+          <li>Height: <span class="content">Altura</span></li>
+        </ul>
+        <ul class="example">
+          <p>Palavras chaves do css</p>
+          <li>Auto:<span class="content"> Ela vai definir um tamanho automático para os elementos em que ela for usada.</span></li>
+          <li>Initial:<span class="content">Sempre que ela for usada como valor da propriedade CSS, ela vai aplicar a propriedade que ele tem como valor padrão.</span></li>
+          <li>Inherit:<span class="content">Ela vai definir o valor da propriedade de acordo com o elemento pai.</span></li>
+        </ul>
+        <h2>Altura, Largura: Máxima e Mínima</h2>
+        <ul class="example">
+          <p>Esses elementos podem ser usados como conjunto de delimitadores.</p>
+          <li> max-width:<span>Define a largura máxima de um elemento</span></li>
+          <li> min-width:<span>Define a largura mínima de um elemento</span></li>
+          <li> max-height:<span>Define a altura máxima de um elemento</span></li>
+          <li> min-height:<span>Define a altura mínima de um elemento</span></li>
+        </ul>
+        <h2>Margin e padding</h2>
+        <ul class="example">
+          <li>margin: <span class="content"> essa propriedade é responsável por criar espaçamento por <b>fora</b> dos elementos</span></li>
+          <li>Padding: <span class="content"> essa propriedade é responsável por criar espaçamento <b>dentro</b> dos elementos</span></li>
+        </ul>
+        <h2>
+          Box Sizing
+        </h2>
+        <ul class="example">
+          <p>Essa propriedade ela tem 2 parâmetros</p>
+          <li>content-box: <span>Ele vai se comportar somando o padding e o valor da altura e largura definida </span>
+            <p class="explanation">
+              Width = largura + borda + padding <br>
+                    200px + 20px +  20px = 240px
+            </p></li>
+          <li>border-box: <span>ele vai somar a altura e largura definida e vai subtrair do tamanho do box inteiro(o que resta é o espaçamento para o conteúdo)</span>
+            <p class="explanation">
+              Width = largura + borda + padding <br>
+                    160px + 20px +  20px = 200px
+            </p>
+          </li>
+
+          
+      </ul>
+      </article>
+    </main>
+  </body>
+</html>
