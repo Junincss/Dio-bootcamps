@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE FONTS (PRESS START 2P) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Press+Start+2P&family=Raleway:wght@100;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- arquivos CSS -->
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+
+
+<title> DIO | Detona Ralph</title>
+</head>
+<body>
+  <!-- Criando containers para estilização -->
+  <div class="container">
+    <div class = "menu">
+      <div class="menu-time">
+       <!-- manipuláveis via Java Script -->
+
+        <h2 class="info">Time Left</h2>
+        <h2 class="numbers" id="time-left">0</h2>
+      </div>
+      <div class="menu-score">
+      <!-- manipuláveis via Java Script -->
+        
+        <h2 class="info ">Your Score</h2>
+        <h2 class="numbers" id="score">0</h2>
+      </div>
+      <div class="menu-lives">
+        <img src="src/images/player.png" alt="imagem do jogador" height="60px">
+        <h2 class="numbers" id="lives">x3</h2>
+
+      </div>
+    </div>
+    <!-- manipuláveis via Java Script -->
+    <div class="panel">
+      <div class="panel-row">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+      </div>
+
+      <div class="panel-row">
+        <div class="square" id="4"></div>
+        <div class="square enemy" id="5"></div>
+        <div class="square" id="6"></div>
+      </div>
+
+      <div class="panel-row">
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
+</html>
